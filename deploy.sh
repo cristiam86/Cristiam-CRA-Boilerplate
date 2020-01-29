@@ -1,0 +1,1 @@
+npm run build && aws s3 --profile iamtech sync build/ s3://react-demo
