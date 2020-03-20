@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Form from './pages/Form';
+import Icons from './pages/Icons';
 import './scss/globals/index.scss';
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
     <div>
       <Router>
         <Switch>
-          <Route component={Form} />
+          <Route path="/icon" component={Icons} />
+          <Route path="/form" component={Form} />
         </Switch>
       </Router>
     </div>
